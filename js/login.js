@@ -7,6 +7,7 @@ const loginBtn = document.getElementById('login-btn').addEventListener('click', 
     if(inputAccount.length === 11){
         if(pin === 1234){
             console.log('Pin number is correct')
+            window.location.href = './main.html'
         }
         else{
             console.log('Pin is Incorrect')
