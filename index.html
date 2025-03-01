@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Payoo</title>
 </head>
-<body>
-    <h1>Happpy</h1>
+
+<body class=" bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto bg-gray-200">
+        <header>
+            <nav class="flex justify-center items-center mb-10">
+                <div class="flex justify-center items-center mt-10 w-9/12">
+                    <img class="w-48" src="./assets/bg.png" alt="">
+                    <img class="w-16 absolute" src="./assets/Group.png" alt="">
+                </div>
+            </nav>
+        </header>
+        <!-- Login Section  -->
+        <div class=" bg-gray-200">
+            <div class="card mx-auto bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label">Account Number</label>
+                            <input id="input-account" value="01765481645" type="number" class="input" placeholder="Account Number" />
+                            <label class="fieldset-label">Password</label>
+                            <input  id="input-password"  type="password" value="1234" class="input" placeholder="Password" />
+                            <div><a class="link link-hover">Forgot password?</a></div>
+                            <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Script  -->
+     <script src="./js/login.js"></script>
 </body>
+
 </html>
